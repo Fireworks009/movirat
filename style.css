@@ -40,6 +40,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .header-icon{
@@ -237,7 +238,7 @@ nav a:hover{
     margin-left: auto;
    } 
 
-   .header-container h3{
+   .header-container .logo{
     margin-right: auto;
    }
    .description-text{
