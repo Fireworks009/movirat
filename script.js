@@ -1,11 +1,11 @@
 function showSidebar(){
     const sideBar = document.querySelector('.sidebar');
-    sideBar.style.display = "flex";
+    sideBar.style.width = "250px";
     return true;
 }
 
 function hideSidebar(){
     const sideBar = document.querySelector('.sidebar');
-    sideBar.style.display = "none";
+    sideBar.style.width = "0px";
     return true;
 }
