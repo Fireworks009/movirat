@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h2 class="logo">Movirat</h2>
+        <nav>
+            <ul class="normalbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li><i class="fas fa-xmark" onclick="hideSidebar()"></i></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="animes.html">Animes</a></li>
+                </ul>
+        </nav>
+        <div class="icons">
+        <i class="icon fas fa-magnifying-glass"></i>
+        <i class="icon fas fa-bell"></i>
+        <i class="icon fas fa-bars" onclick="showSidebar()" id="menu-btn"></i>
+        </div>
+        </div>
+    </header>
+
+    <section class="join">
+        <div class="join-container">
+            <h1>Be a part of our raters</h1>
+            <p>join us now and share your opnion about movies,series and animes</p>
+            <a href="#" class="join-link">Create Account</a>
+            <a href="#" class="signin-link">Already have an account? Sign in</a>
+        </div>
+    </section>
+
+    <section class="description">
+        <div class="description-container">
+            <h1>Why us?</h1>
+            <div class="desc-cards">
+                <div class="card" id="card1">
+                    <div class="group-logo">
+                        <h2>realable</h2>
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <p>Why have anti spam system to assure that all ratings are real.</p>
+                </div>
+                <div class="card" id="card2">
+                    <div class="group-logo">
+                        <h2>BIG</h2>
+                        <i class="fas fa-people-group"></i>
+                    </div>
+                    <p>We have a massive base of users and raters, so our ratings resembles all people</p>
+                </div>
+                <div class="card" id="card3">
+                    <div class="group-logo">
+                        <h2>Up To Date</h2>
+                        <i class="fas fa-rotate"></i>
+                    </div>
+                    <p>We make sure to add every Movie, series and anime as soon as the come out</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="top-movies">
+        <div class="movies-container">
+            <h1 class="titles">Top Movies</h1>
+            <div class="movies-cards">
+                <div class="movie-card" id="movie-card1">
+                    <img src="Images/movies/interstellar.jpg" alt="intersteallar" class="movie-image" onclick="{window.location.href = 'interstellar.html'}">
+                    <h3>intersteallar</h3>
+                </div>
+                <div class="movie-card" id="movie-card2">
+                    <img src="Images/movies/the-dark-knight.jpg" alt="mr. Robot" class="movie-image">
+                    <h3>The Dark Knight</h3>
+                </div>
+                <div class="movie-card" id="movie-card3">
+                    <img src="Images/movies/angry-man.jpg" alt="The Walking Dead" class="movie-image">
+                    <h3>12 Angry Men</h3>
+                </div>
+                <div class="movie-card" id="movie-card4">
+                    <img src="Images/movies/seven.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>Se7en</h3>
+                </div>
+                <div class="movie-card" id="movie-card5">
+                    <img src="Images/movies/the-godfather.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>The God Father</h3>
+                </div>
+                <div class="movie-card" id="movie-card6">
+                    <img src="Images/movies/the-matrix.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>The Matrix</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="top-movies">
+        <div class="movies-container">
+            <h1 class="titles">Top Tv Shows</h1>
+            <div class="movies-cards">
+                <div class="movie-card" id="movie-card1">
+                    <img src="Images/tvshows/breaking-bad.jpg" alt="intersteallar" class="movie-image">
+                    <h3>Breaking Bad</h3>
+                </div>
+                <div class="movie-card" id="movie-card2">
+                    <img src="Images/tvshows/chernobyl.jpg" alt="mr. Robot" class="movie-image">
+                    <h3>chernobyl</h3>
+                </div>
+                <div class="movie-card" id="movie-card3">
+                    <img src="Images/tvshows/friends.jpg" alt="The Walking Dead" class="movie-image">
+                    <h3>Friends</h3>
+                </div>
+                <div class="movie-card" id="movie-card4">
+                    <img src="Images/tvshows/game-of-thrones.jpg" class="movie-image">
+                    <h3>Game Of Thrones</h3>
+                </div>
+                <div class="movie-card" id="movie-card5">
+                    <img src="Images/tvshows/la-casa-de-papel.jpg" class="movie-image">
+                    <h3>La Casa De Papel</h3>
+                </div>
+                <div class="movie-card" id="movie-card6" onclick="{window.location.href = 'mr-robot.html'}">
+                    <img src="Images/tvshows/mr-robot.jpg" class="movie-image">
+                    <h3>Mr.robot</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="top-movies">
+        <div class="movies-container">
+            <h1 class="titles">Top Animes</h1>
+            <div class="movies-cards">
+                <div class="movie-card" id="movie-card1">
+                    <img src="Images/animes/attack.jpg" alt="intersteallar" class="movie-image" onclick="{window.location.href='attack.html'}">
+                    <h3>Attack On Titan</h3>
+                </div>
+                <div class="movie-card" id="movie-card2">
+                    <img src="Images/animes/bleach.jpg" alt="mr. Robot" class="movie-image">
+                    <h3>Bleach</h3>
+                </div>
+                <div class="movie-card" id="movie-card3">
+                    <img src="Images/animes/demon-slayer.jpg" alt="The Walking Dead" class="movie-image">
+                    <h3>Demon Slayer</h3>
+                </div>
+                <div class="movie-card" id="movie-card4">
+                    <img src="Images/animes/jujutsu-kaisen.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>Jujutsu Kaisen</h3>
+                </div>
+                <div class="movie-card" id="movie-card5">
+                    <img src="Images/animes/naruto.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>Naruto</h3>
+                </div>
+                <div class="movie-card" id="movie-card6">
+                    <img src="Images/animes/one-piece.jpg" alt="Breaking Bad" class="movie-image">
+                    <h3>One Piece</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

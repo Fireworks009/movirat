@@ -1,0 +1,40 @@
+
+:root{
+    --primary-color:#00d6d6;
+    --pirmary-color2:#08b8b863;
+    --surface-1:#010101;
+    --surface-2:#1e1e1e;
+    --surface-3:#363636;
+    --surface-4:#4f4f4f;
+}
+.box {
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.box .name {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.box .data {
+    margin-left: auto;
+    margin-right: 50px;
+    background-color: var(--pirmary-color2);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.box a {
+    margin-right: 20px;
+    font-size: 30px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer
+}
+.box img {
+    width: 70px;
+}

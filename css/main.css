@@ -1,0 +1,225 @@
+:root{
+    --primary-color:#00d6d6;
+    --pirmary-color2:#08b8b863;
+    --text-color: white;
+    --surface-1:#010101;
+    --surface-2:#1e1e1e;
+    --surface-3:#363636;
+    --surface-4:#4f4f4f;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("Fonts/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: sans;
+    src: url("../Fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+body {
+    background-color: var(--surface-1);
+    font-family: sans;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Start Header */
+header {
+   padding: 20px;
+}
+header .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-icon { 
+    margin: 0 15px;
+}
+.logo {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav a {
+    margin: 10px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: sans;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #F0F0F0;
+    background-color: var(--pirmary-color2);
+}
+nav a.active {
+    background-color: var(--pirmary-color2);
+    color: #F0F0F0;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.593);
+    list-style: none;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+header .icons a {
+    margin-left: 10px;
+}
+@media (min-width: 970px) {
+    header .menu-btn {
+        display: none;
+    }
+}
+.sidebar li {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 970px){
+   .normalbar {
+    display: none;
+   }
+   .container .icons{
+    margin-left: auto;
+   } 
+   .container .logo{
+    margin-right: auto;
+   }
+}
+/* End Haeder  */
+/* Start Componants */
+.active {
+    background-color: #3819198a;
+    border-radius: 10px;
+}
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+/* Small Screan */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium Screan */
+@media (min-width: 970px) {
+    .container {
+        width: 922px;
+    }
+}
+/* Large Screan */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Componants */
+/* Start TV Shows Section  */
+.sectio {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.sectio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.sectio .box {
+    background-color: var(--surface-2);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+.sectio .box:hover {
+    transform: translateY(-10px)
+}
+.sectio .container .image img {
+    width: 100%;
+    aspect-ratio: 9/16;
+}
+.sectio .container .info {
+    color: var(--text-color);;
+    margin: 20px 20px 10px;
+}
+.sectio .container .box:hover .info {
+    color: var(--primary-color);
+}
+.sectio .container .info .name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* color: var(--primary-color); */
+    transition: .3s;
+}
+.sectio .container .box:hover .name {
+    /* color: var(--text-color);; */
+}
+.sectio .container .info .description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 70px;
+    /* color: var(--primary-color); */
+}
+.sectio .container .box:hover .description {
+    /* color: var(--text-color);; */
+}
+.sectio .container .rateing {
+    position: absolute;
+    bottom: 10px;
+    margin: 20px 20px 10px;
+    display: flex;
+}
+.sectio .container .rateing .stars {
+    margin-right: 10px;
+    color: gold;
+    align-content: center;
+    font-size: 22px;
+}
+.sectio .container .rateing .number {
+    color: var(--text-color);;
+    font-size: 30px;
+
+}
+.sectio .container .rateing .number:after {
+    content: "IBMD";
+    font-size: 10px;
+
+}
+/* End Moves Section  */
+/* Start Footer  */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--pirmary-color2);
+    color: var(--pirmary-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End Footer  */

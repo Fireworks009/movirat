@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <!-- Start Header  -->
+    <header>
+      <div class="container">
+        <h2 class="logo">Movirat</h2>
+        <nav>
+          <ul class="normalbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movies.html" class="active">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="animes.html">Animes</a></li>
+          </ul>
+          <ul class="sidebar">
+            <li>
+              <a href="#" onclick="hideSidebar()"
+                > <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#00d6d6"
+                >
+                  <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>></a>
+            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movies.html" class="active">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="animes.html">Animes</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#00d6d6"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              /></svg></a>
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#00d6d6"
+            >
+              <path
+                d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg></a>
+          <a href="#" onclick="showSidebar()" id="menu-btn" class="menu-btn"><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#00d6d6"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header  -->
+    <!-- Start TV Shows Sections  -->
+    <div class="sectio">
+      <div class="container">
+        <div class="box" id="the-godfather">
+          <div class="image">
+            <img src="images/movies/the-godfather.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">The Godfather</h2>
+            <p class="description" id="description">
+              The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="number">8.2</div>
+          </div>
+        </div>
+        <div class="box" id="the-dark-knight">
+          <div class="image">
+            <img src="images/movies/the-dark-knight.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">The Dark Knight</h2>
+            <p class="description" id="description">
+              When a menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, James Gordon and Harvey Dent must work together to put an end to the madness
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> -->
+            </div>
+            <div class="number">9.0</div>
+          </div>
+        </div>
+        <div class="box" id="the-matrix">
+          <div class="image">
+            <img src="images/movies/the-matrix.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">The Matrix</h2>
+            <p class="description" id="description">
+              When a beautiful stranger leads computer hacker Neo to a forbidding underworld,
+               he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="number">8.7</div>
+          </div>
+        </div>
+        <div class="box" id="seven">
+          <div class="image">
+            <img src="images/movies/seven.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">Sev7en</h2>
+            <p class="description" id="description">
+              Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> -->
+            </div>
+            <div class="number">8.6</div>
+          </div>
+        </div>
+        <div class="box" id="angry-men">
+          <div class="image">
+            <img src="images/movies/angry-man.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">12 Angry Men</h2>
+            <p class="description" id="description">
+              The jury in a New York City murder trial is frustrated by a
+               single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> -->
+            </div>
+            <div class="number">9.0</div>
+          </div>
+        </div>
+        <div class="box" id="interstellar" onclick="{window.location.href = 'interstellar.html'}">
+          <div class="image">
+            <img src="images/movies/interstellar.jpg" alt="" />
+          </div>
+          <div class="info">
+            <h2 class="name" id="name">Interstellar</h2>
+            <p class="description" id="description">
+              Nine noble families fight for control over the lands of Westeros,
+              while an ancient enemy returns after being dormant for millennia.
+            </p>
+          </div>
+          <div class="rateing" id="rateing">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <!-- <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> -->
+            </div>
+            <div class="number">9.7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End TV Shows Sections  -->
+    <!-- Start Footer  -->
+    <footer>&copy; Hamza & Hadi All Right Reserved</footer>
+    <!-- End Footer  -->
+    <script src="script.js"></script>
+  </body>
+</html>

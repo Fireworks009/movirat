@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/attack.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="script.js"></script>
+    <title>Movirat</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="header-container">
+        <h2 class="logo">Movirat</h2>
+        <nav>
+            <ul class="normalbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+            <li><a href="animes.html">Animes</a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li><i class="fas fa-xmark" onclick="hideSidebar()"></i></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="animes.html">Animes</a></li>
+                </ul>
+        </nav>
+        <div class="icons">
+        <i class="icon fas fa-magnifying-glass"></i>
+        <i class="icon fas fa-bell"></i>
+        <i class="icon fas fa-bars" onclick="showSidebar()" id="menu-btn"></i>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+        <section class="description-section">
+            <div class="description-container">
+            <h4 class="season">4Season</h4>
+            <h1 class="description-title">ATTACK ON TITAN</h1>
+            <p class="description-text">when man-eating Titans first appeard 100 years ago humans found safely behind massive walls that stopped the gaints in their tracks. But the safety the have had for through the barriers.</p>
+            </div>
+            <div class="rating">
+                <img src="Icons/Star.png" alt="Rating Star" width="100px" height="100px" id="star">
+                <img src="Icons/imdb.png" alt="imdb logo" height="20px" width="60px" id="imdb">
+                <p class="rating-text">Rating</p>
+                <p class="rating-number">9.9/10</p>
+            </div>
+            <div class="btns">
+                <a href="#"><i class="fas fa-play"></i><p>Watch Now</p></a>
+                <a href="#"><i class="fas fa-list-check"></i>Add to list</a>
+            </div>
+        </section>
+        <section class="videos-container">
+            <div class="video"></div>
+            <div class="video"></div>
+            <div class="video"></div>
+        </section>
+    </div> 
+    </main>
+</div>
+</body>
+</html>
